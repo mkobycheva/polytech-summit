@@ -326,7 +326,9 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   @media (min-width: 900px) {
     body { align-items: center; padding: 2rem 0; background: #0b0b0b; }
     .device {
-      height: min(92vh, 900px);
+      width: 393px;
+      height: 852px;
+      max-width: 393px;
       min-height: 0;
       border: 1px solid var(--dark-6);
       box-shadow: 0 0 0 8px #000, 0 30px 80px rgba(0,0,0,.8);
@@ -538,7 +540,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
     <div class="rl-body">
       <div class="res-ok">◤ Код розпізнано</div>
       <h2 class="res-name">Генерал Черешня 10<br>Оптікс 15 (км) день</h2>
-      <div class="res-id">ID · GC15-0X35-0774</div>
+      <div class="res-id">ID · A7K-2941</div>
 
       <div class="field"><span class="k">Операція</span><span class="v">Кріплення моторів</span></div>
       <div class="field"><span class="k">Виконавець</span><span class="v">Черешня Шевченко · ID 2041</span></div>
@@ -587,12 +589,12 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 
 <script>
 const DRONES = [
-  { name:"Генерал Черешня 10 Оптікс 15 (км) день",                        id:"GC15-0X35-0774", st:"build", op:"Кріплення моторів", date:"19.09.2026", time:"16:04" },
-  { name:"Генерал Черешня 10 Оптікс 15 (км) ніч 640",                     id:"GCB-ASH-1182",   st:"wait",  op:"Кріплення моторів", date:"19.09.2026", time:"15:21" },
-  { name:"Генерал Черешня 13 Оптікс 15 (км) день",                        id:"GC15-0X35-0773", st:"ok",    op:"Кріплення моторів", date:"19.09.2026", time:"14:47" },
-  { name:"Генерал Черешня AIR - Перехоплювач (Цифра / День)",             id:"GCA-STN-0310",   st:"wait",  op:"Кріплення моторів", date:"18.09.2026", time:"13:52" },
-  { name:"Генерал Черешня AIR SPEED - Перехоплювач (Аналог / Ніч 640)",   id:"GCB-ASH-1181",   st:"ok",    op:"Кріплення моторів", date:"18.09.2026", time:"11:30" },
-  { name:"Генерал Черешня AIR SPEED - Перехоплювач (Цифра / Ніч 640)",    id:"GC15-0X35-0771", st:"ok",    op:"Кріплення моторів", date:"17.09.2026", time:"09:15" },
+  { name:"Генерал Черешня 10 Оптікс 15 (км) день",                        id:"A7K-2941", st:"build", op:"Кріплення моторів", date:"19.09.2026", time:"16:04" },
+  { name:"Генерал Черешня 10 Оптікс 15 (км) ніч 640",                     id:"A7K-3010", st:"wait",  op:"Кріплення моторів", date:"19.09.2026", time:"15:21" },
+  { name:"Генерал Черешня 13 Оптікс 15 (км) день",                        id:"B2M-1104", st:"ok",    op:"Кріплення моторів", date:"19.09.2026", time:"14:47" },
+  { name:"Генерал Черешня AIR - Перехоплювач (Цифра / День)",             id:"B2M-1277", st:"wait",  op:"Кріплення моторів", date:"18.09.2026", time:"13:52" },
+  { name:"Генерал Черешня AIR SPEED - Перехоплювач (Аналог / Ніч 640)",   id:"C4X-0458", st:"ok",    op:"Кріплення моторів", date:"18.09.2026", time:"11:30" },
+  { name:"Генерал Черешня AIR SPEED - Перехоплювач (Цифра / Ніч 640)",    id:"C4X-0512", st:"ok",    op:"Кріплення моторів", date:"17.09.2026", time:"09:15" },
 ];
 const ST = { build:["build","На збірці"], wait:["wait","На перевірці"], ok:["ok","Готово"] };
 
@@ -639,7 +641,7 @@ document.getElementById("closeResult").onclick = hideResult;
 document.getElementById("cancelScan").onclick = hideResult;
 document.getElementById("confirmScan").onclick = () => {
   hideResult();
-  toast("Операцію записано · GC15-0X35-0774");
+  toast("Операцію записано · A7K-2941");
 };
 
 let tTimer;
